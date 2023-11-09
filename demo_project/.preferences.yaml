@@ -3,7 +3,7 @@ sync_config:
   auth_type: https
   branch: null
   email: apurvalokare@gmail.com
-  remote_repo_link: https://github.com/ApurvaLokare/testmage_ai
+  remote_repo_link: https://github.com/ApurvaLokare/testmage_ai.git
   repo_path: /home/myteam
   ssh_public_key_secret_name: mage_git_ssh_public_key_b64
   sync_on_pipeline_run: false
