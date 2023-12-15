@@ -1,0 +1,43 @@
+project_type: standalone
+
+variables_dir: ~/.mage_data
+remote_variables_dir: s3://opensource-etl-demofiles
+
+variables_retention_period: '90d'
+
+emr_config:
+  # You can customize the EMR cluster instance size with the two parameters
+  master_instance_type: r5.4xlarge
+  slave_instance_type: r5.4xlarge
+  ec2_key_name: opensource-mage
+  master_security_group: sg-018f56f0a7a4803fc
+  slave_security_group: sg-0e7b8e2ce0f7fce01
+  ec2_key_path: /home/src/default_repo/opensource-mage.pem
+spark_config:
+  # Application name
+  app_name: my spark app
+  spark_master: local
+  executor_env: {}
+  spark_jars:
+  - C:\Users\ankit.sharma\Downloads\mysql-connector-java-8.0.26.jar
+  spark_home:
+  others: {}
+  use_custom_session: false
+  custom_session_var_name: spark
+notification_config:
+  alert_on:
+  - trigger_failure
+  - trigger_passed_sla
+  slack_config:
+    webhook_url: "{{ env_var('MAGE_SLACK_WEBHOOK_URL') }}"
+  teams_config:
+    webhook_url: "{{ env_var('MAGE_TEAMS_WEBHOOK_URL') }}"
+project_uuid: ff346c67120b4eca9ede012c81e2c03b
+help_improve_mage: false
+features:
+  compute_management: true
+  interactions: true
+  display_local_timezone: true
+  operation_history: true
+  add_new_block_v2: true
+pipelines:
