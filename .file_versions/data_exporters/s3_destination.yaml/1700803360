@@ -1,0 +1,9 @@
+config:
+  aws_access_key_id: AKIA6ET33KEESAHSXMPB
+  aws_region: us-west-2
+  aws_secret_access_key: null
+  bucket: ansh-mage-test
+  file_type: csv
+  object_key_path: null
+  date_partition_format: null
+destination: amazon_s3

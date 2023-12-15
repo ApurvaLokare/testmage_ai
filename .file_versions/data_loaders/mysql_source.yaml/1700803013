@@ -1,0 +1,13 @@
+config:
+  database: demo
+  host: 3.7.254.228
+  port: 3306
+  username: "{{ mage_secret_var('username') }}"
+  password: "{{ mage_secret_var('password') }}"
+  connection_method: direct
+  ssh_host: null
+  ssh_port: 22
+  ssh_username: null
+  ssh_password: null
+  ssh_pkey: null
+source: mysql

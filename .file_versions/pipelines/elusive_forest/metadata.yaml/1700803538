@@ -1,0 +1,280 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - s3_destination
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: mysql_source
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: mysql_source
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: s3_destination
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - mysql_source
+  uuid: s3_destination
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-11-24 05:08:10.500646+00:00'
+data_integration:
+  catalog:
+    streams:
+    - auto_add_new_fields: false
+      bookmark_properties:
+      - id
+      destination_table: ansh_nyc_taxi_data
+      key_properties:
+      - id
+      metadata:
+      - breadcrumb: []
+        metadata:
+          forced-replication-method: FULL_TABLE
+          inclusion: available
+          schema-name: ansh_nyc_taxi_data
+          selected: true
+          table-key-properties: []
+          valid-replication-keys: []
+      - breadcrumb:
+        - properties
+        - id
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - vendorid
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - tpep_pickup_datetime
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - tpep_dropoff_datetime
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - passenger_count
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - trip_distance
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - pickup_longitude
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - pickup_latitude
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - RateCodeID
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - store_and_fwd_flag
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - dropoff_longitude
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - dropoff_latitude
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - payment_type
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - fare_amount
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - extra
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - mta_tax
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - tip_amount
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - tolls_amount
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - improvement_surcharge
+        metadata:
+          inclusion: available
+          selected: true
+      - breadcrumb:
+        - properties
+        - total_amount
+        metadata:
+          inclusion: available
+          selected: true
+      replication_method: INCREMENTAL
+      schema:
+        properties:
+          RateCodeID:
+            type:
+            - 'null'
+            - string
+          dropoff_latitude:
+            type:
+            - 'null'
+            - string
+          dropoff_longitude:
+            type:
+            - 'null'
+            - string
+          extra:
+            type:
+            - 'null'
+            - string
+          fare_amount:
+            type:
+            - 'null'
+            - string
+          id:
+            type:
+            - integer
+          improvement_surcharge:
+            type:
+            - 'null'
+            - string
+          mta_tax:
+            type:
+            - 'null'
+            - string
+          passenger_count:
+            type:
+            - 'null'
+            - string
+          payment_type:
+            type:
+            - 'null'
+            - string
+          pickup_latitude:
+            type:
+            - 'null'
+            - string
+          pickup_longitude:
+            type:
+            - 'null'
+            - string
+          store_and_fwd_flag:
+            type:
+            - 'null'
+            - string
+          tip_amount:
+            type:
+            - 'null'
+            - string
+          tolls_amount:
+            type:
+            - 'null'
+            - string
+          total_amount:
+            type:
+            - 'null'
+            - string
+          tpep_dropoff_datetime:
+            type:
+            - 'null'
+            - string
+          tpep_pickup_datetime:
+            type:
+            - 'null'
+            - string
+          trip_distance:
+            type:
+            - 'null'
+            - string
+          vendorid:
+            type:
+            - 'null'
+            - string
+        type: object
+      stream: ansh_nyc_taxi_data
+      tap_stream_id: ansh_nyc_taxi_data
+      unique_conflict_method: IGNORE
+      unique_constraints:
+      - id
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: elusive forest
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: integration
+updated_at: '2023-11-24T05:25:39+00:00'
+uuid: elusive_forest
+widgets: []

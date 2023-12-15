@@ -1,0 +1,23 @@
+blocks: []
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-11-24 05:08:10.500646+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: elusive forest
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: integration
+updated_at: '2023-11-24 05:08:36'
+uuid: elusive_forest
+widgets: []

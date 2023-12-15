@@ -1,0 +1,11 @@
+sync_config:
+  auth_type: https
+  branch: null
+  email: null
+  remote_repo_link: https://github.com/ApurvaLokare/testmage_ai.git
+  repo_path: /home/src/default_repo
+  sync_on_pipeline_run: false
+  sync_on_start: false
+  sync_submodules: null
+  type: null
+  username: null

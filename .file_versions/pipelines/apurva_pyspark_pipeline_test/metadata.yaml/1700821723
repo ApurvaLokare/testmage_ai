@@ -1,0 +1,23 @@
+blocks: []
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-11-23 09:03:00.833415+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: apurva_pyspark_pipeline_test
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: pyspark
+updated_at: '2023-11-24 10:28:45'
+uuid: apurva_pyspark_pipeline_test
+widgets: []

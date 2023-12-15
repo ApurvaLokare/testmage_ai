@@ -1,0 +1,23 @@
+blocks: []
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-12-15 07:16:22.817783+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: apurva_git_test1
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+updated_at: null
+uuid: apurva_git_test1
+widgets: []

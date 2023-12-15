@@ -1,0 +1,70 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - gallant_monk
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: late quest
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: late_quest
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: gallant monk
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - late_quest
+  uuid: gallant_monk
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: quaint rune
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: quaint_rune
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-11-23 09:03:00.833415+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: apurva_pyspark_pipeline_test
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: pyspark
+updated_at: '2023-11-24 11:13:04'
+uuid: apurva_pyspark_pipeline_test
+widgets: []

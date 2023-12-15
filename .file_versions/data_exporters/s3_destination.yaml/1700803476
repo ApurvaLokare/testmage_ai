@@ -1,0 +1,9 @@
+config:
+  aws_access_key_id: AKIA6ET33KEESAHSXMPB
+  aws_region: us-west-2
+  aws_secret_access_key: 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
+  bucket: ansh-mage-test
+  file_type: csv
+  object_key_path: ansh_nyc_taxi_data
+  date_partition_format: "%Y%m%d"
+destination: amazon_s3

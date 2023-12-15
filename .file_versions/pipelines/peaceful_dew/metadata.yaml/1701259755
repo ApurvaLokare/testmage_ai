@@ -1,0 +1,23 @@
+blocks: []
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-11-29 12:08:38.690804+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: peaceful dew
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: integration
+updated_at: '2023-11-29 12:09:15'
+uuid: peaceful_dew
+widgets: []
